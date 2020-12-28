@@ -193,6 +193,7 @@ position of relative which is the hero class in this case*/
     text-align: center;
     height: 200px;
 }
+
 .footer a {
     color: #ffffff;
 }
@@ -200,12 +201,39 @@ position of relative which is the hero class in this case*/
 .footer a:hover {
     color: #28a745;
 }
+
 .footer .social > * {
     margin-right: 30px;
 }
 
 
 
+/*Mobile*/
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: 120px;
+        padding: 20px;
+
+    }
+
+    .navbar a {
+        padding: 10px 10px;
+        margin: 0 3px;
+    }
+
+    .flex-items {
+        flex-direction: column;
+    }
+
+    .flex-columns .column, .flex-grid .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .team img {
+        width: 70%;
+    }
+}
 
 
 
